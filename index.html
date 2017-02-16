@@ -444,14 +444,11 @@
         </div>
     </div>
 </footer>
-<script src="./dist/js/jquery-3.1.1.min.js"></script>
 <script>
-
-    $(document).ready(function () {
-        $('#burger').on('click', function(){
-            $(this).closest('header.main').toggleClass('active');
-        });
-    });
+    function toggleBurger(){
+        this.parentNode.parentNode.classList.toggle('active');
+    }
+    document.getElementById('burger').addEventListener('click', toggleBurger );
 </script>
 
 </body>
