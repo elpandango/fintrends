@@ -12,7 +12,7 @@
 
 <header class="main">
     <div class="content clear">
-        <div class="header-logo"></div>
+        <a href=""><img src="/library/img/header-logo.png" alt="header-logo"></a>
         <ul class="user-group clear">
             <li class="user-group-item">
                 <a href="">Магазин</a>
@@ -29,10 +29,25 @@
                 </form>
             </li>
         </ul>
+        <div id="burger">
+            <span class="line"></span>
+        </div>
+    </div>
+    <div class="dropdown">
+        <ul>
+            <li><a href="">Магазин</a></li>
+            <li><a href="">Регистрация</a></li>
+            <li><a href="">Вход</a></li>
+            <li class="search">
+                <form action="/" method="post">
+                    <input type="text" placeholder="Найти">
+                </form>
+            </li>
+        </ul>
     </div>
 </header>
 
-<header class="menu">
+<div class="container menu">
     <div class="content">
         <nav class="clear">
             <a href="" class="nav-item active">Посты</a>
@@ -42,15 +57,15 @@
             <a href="" class="nav-item">Брокеры</a>
         </nav>
     </div>
-</header>
+</div>
 
-<header class="tabs">
+<div class="container tabs">
     <div class="content clear">
         <a href="" class="tab-item active">Лучшие</a>
         <a href="" class="tab-item">Тематические</a>
         <a href="" class="tab-item">Брокерские</a>
     </div>
-</header>
+</div>
 
 <div class="content filters">
     <a href="" class="filters-item active">За сутки</a>
@@ -61,66 +76,56 @@
 
 <div class="content columns clear">
     <div class="col-left">
-        <section class="news">
-            <article>
-                <header>
-                    <ul class="tag-list">
-                        <li class="tag-list-item">
-                            <a href="">Бизнес</a>
-                        </li>
-                        <li class="tag-list-item">
-                            <a href="">Инвестиции</a>
-                        </li>
-                        <li class="tag-list-item">
-                            <a href="">Рынок</a>
-                        </li>
-                    </ul>
-                    <a href="" class="title">10 сверхприбыльных криптовалютных рынков</a>
-                    <div class="date">Вчера в 23:37</div>
-                </header>
-                <p>Миром овладела новая мания. Люди ринулись переводить доллары, юани, рубли и гривны в виртуальные
-                    монеты,
-                    создав в киберпространстве $15-миллиардный валютный рынок с уникальными особенностями.</p>
+        <article class="news">
+            <header>
+                <div class="tags">
+                    <a href="" class="tag-item">Бизнес</a>,
+                    <a href="" class="tag-item">Инвестиции</a>,
+                    <a href="" class="tag-item">Рынок</a>
+                </div>
+                <a href="" class="title">10 сверхприбыльных криптовалютных рынков</a>
+                <div class="date">Вчера в 23:37</div>
+            </header>
+            <p>Миром овладела новая мания. Люди ринулись переводить доллары, юани, рубли и гривны в виртуальные
+                монеты,
+                создав в киберпространстве $15-миллиардный валютный рынок с уникальными особенностями.</p>
 
-                <p>Вначале появился биткоин. Создатели первой криптовалюты – таинственная группа программистов под
-                    псевдонимом
-                    Сатоси Накамото – заложили в ее основу дюжину идеалистических идей, предоставив любому пользователю
-                    интернета возможность совершать сделки без комиссий, без контроля и без посредников.</p>
+            <p>Вначале появился биткоин. Создатели первой криптовалюты – таинственная группа программистов под
+                псевдонимом
+                Сатоси Накамото – заложили в ее основу дюжину идеалистических идей, предоставив любому пользователю
+                интернета возможность совершать сделки без комиссий, без контроля и без посредников.</p>
 
-                <div class="image"><img src="http://placehold.it/845x566" alt="article-image"></div>
-                <p>До недавнего времени деловой мир скептически относился к биткоинам. Поначалу криптовалюты
-                    популяризировались
-                    среди разного рода маргиналов. Люди, увлеченные компьютерными технологиями, видели в них новый
-                    забавный
-                    софт, стартаперы – перспективную подрывную технологию, социопаты и анархисты – способ подорвать
-                    диктатуру
-                    мирового капитала, преступники – возможность тщательнее скрыть нелегальные денежные потоки, а
-                    спекулянты
-                    –
-                    финансовый инструмент, крайне рисковый, но способный принести баснословный доход.</p>
+            <div class="image"><img src="http://placehold.it/845x566" alt="article-image"></div>
+            <p>До недавнего времени деловой мир скептически относился к биткоинам. Поначалу криптовалюты
+                популяризировались
+                среди разного рода маргиналов. Люди, увлеченные компьютерными технологиями, видели в них новый
+                забавный
+                софт, стартаперы – перспективную подрывную технологию, социопаты и анархисты – способ подорвать
+                диктатуру
+                мирового капитала, преступники – возможность тщательнее скрыть нелегальные денежные потоки, а
+                спекулянты
+                –
+                финансовый инструмент, крайне рисковый, но способный принести баснословный доход.</p>
 
-                <p>Для любителей азарта в интернете было создано около пятидесяти бирж, на которых можно за обычные
-                    деньги
-                    приобрести криптовалюту и в автоматическом режиме обменивать ее на доллары, евро или рубли при
-                    комиссии
-                    0,1-0,2%. В четверку крупнейших бирж на данный момент входят китайская BTC China, словенская
-                    Bitstamp,
-                    токийская MtGox и российская BTC-e.</p>
-                <footer class="clear">
-                    <a href="" class="btn btn-blue">Читать дальше <span class="fa fa-long-arrow-right"></span></a>
+            <p>Для любителей азарта в интернете было создано около пятидесяти бирж, на которых можно за обычные
+                деньги
+                приобрести криптовалюту и в автоматическом режиме обменивать ее на доллары, евро или рубли при
+                комиссии
+                0,1-0,2%. В четверку крупнейших бирж на данный момент входят китайская BTC China, словенская
+                Bitstamp,
+                токийская MtGox и российская BTC-e.</p>
+            <footer class="clear">
+                <a href="" class="btn btn-blue">Читать дальше &#8594;</a>
 
-                    <div class="article-info-list clear">
-                        <div class="info-item">
-                            +211
-                        </div>
-                        <div class="info-item">1358</div>
-                        <div class="info-item">82</div>
-                        <div class="info-item"><a href="">Gabe <span>157.7</span></a></div>
-                        <div class="info-item">152</div>
-                    </div>
-                </footer>
-            </article>
-        </section>
+                <div class="article-info-list clear">
+                    <div class="info-item"><span class="icon icon-caret-down"></span>+211</div>
+                    <div class="info-item"><span class="icon icon-caret-down"></span>1358</div>
+                    <div class="info-item"><span class="icon icon-caret-down"></span>82</div>
+                    <div class="info-item"><span class="icon icon-caret-down"></span><a href="">Gabe</a><span>157.7</span></div>
+                    <div class="info-item"><span class="icon icon-caret-down"></span>152</div>
+                </div>
+            </footer>
+        </article>
 
 
         <div class="pagination clear">
@@ -135,56 +140,210 @@
         </div>
     </div>
     <div class="col-right">
-        <aside class="main">
-            <article>
-                <header>Навигатор трендов</header>
-
-            </article>
-            <article>
-                <header>Акция "хочу еще"</header>
-
-            </article>
-            <article>
-                <header>Прямой эфир</header>
-                <div class="item-list">
-                    <div class="item">
-                        <a href="">Топ-10 лучших стран для бизнеса по версии Forbes</a>
-                        <span class="red">21</span>
-                    </div>
-                    <div class="item">
-                        <a href="">Топ-10 лучших стран для бизнеса по версии Forbes</a>
-                        <span class="red">21</span>
-                    </div>
-                    <div class="item">
-                        <a href="">Топ-10 лучших стран для бизнеса по версии Forbes</a>
-                        <span class="red">21</span>
-                    </div>
-                    <div class="item">
-                        <a href="">Топ-10 лучших стран для бизнеса по версии Forbes</a>
-                        <span class="red">21</span>
-                    </div>
+        <div class="col-item">
+            <header>Навигатор трендов</header>
+            <div class="col-content">
+                <form action="/" method="post">
+                    <select name="Category" id="form-cat">
+                        <option value="1">Категория</option>
+                        <option value="2">Категория 2</option>
+                        <option value="3">Категория 3</option>
+                        <option value="4">Категория 4</option>
+                    </select>
+                    <select name="Trend" id="form-trend">
+                        <option value="1">Тренд</option>
+                        <option value="2">Тренд 2</option>
+                        <option value="3">Тренд 3</option>
+                        <option value="4">Тренд 4</option>
+                    </select>
+                    <button class="btn btn-blue">Посмотреть</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-item">
+            <header>Акция &#171;хочу еще&#187;</header>
+            <div class="col-content">
+                <div class="image"><img src="/library/img/panteon-logo.png" alt="ads-logo"></div>
+                <p>Инвестируй в ПАММ счет от 10000$
+                    пиши в блог о своем портфеле и получи дополнительно <strong>+10%</strong></p>
+                <div class="checkboxes">
+                    <label class="checked"><input class="hidden" type="checkbox" checked disabled>Инвестиционные документы: ПАММ,
+                        индексы, фонды</label>
+                    <label class="checked"><input class="hidden" type="checkbox" checked disabled>Страхование от убытков</label>
                 </div>
-            </article>
-            <article>
-                <header>Брокер дня</header>
-
-            </article>
-            <article>
-                <header>Новые брокеры</header>
-
-            </article>
-            <article>
-                <header>Ближайшие события</header>
-
-            </article>
-        </aside>
+                <a href="" class="btn btn-blue">Узнать подробнее</a>
+            </div>
+        </div>
+        <div class="col-item">
+            <header>Прямой эфир</header>
+            <div class="item-list">
+                <div class="item">
+                    <a href="">Топ-10 лучших стран для бизнеса по версии Forbes
+                        Топ-10 лучших стран для бизнеса по версии Forbes
+                        Топ-10 лучших стран для бизнеса по версии Forbes</a>
+                    <span class="red">21</span>
+                </div>
+                <div class="item">
+                    <a href="">Топ-10 лучших стран для бизнеса по версии Forbes</a>
+                    <span class="red">21</span>
+                </div>
+                <div class="item">
+                    <a href="">Топ-10 лучших стран для бизнеса по версии Forbes</a>
+                    <span class="red">21</span>
+                </div>
+                <div class="item">
+                    <a href="">Топ-10 лучших стран для бизнеса по версии Forbes</a>
+                    <span class="red">21</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-item">
+            <header>Брокер дня</header>
+            <div class="col-content">
+                <div class="image"><img src="/library/img/forex-logo.png" alt="ads-logo"></div>
+                <p>«Европа не требует повышения цен на ком. услуги.
+                    Этого требует МВФ для кредита!
+                    Старики не начнут пенсии получать по 500 евро до тех пор» <a class="link" href="">Читать дальше &#8594;</a></p>
+                <div class="followers">9906 подписчиков</div>
+            </div>
+        </div>
+        <div class="col-item">
+            <header>Новые брокеры</header>
+            <div class="col-content">
+                <div class="icon-link">
+                    <div class="icon"></div>
+                    <a href="">Fogna-Trend</a>
+                </div>
+                <div class="icon-link">
+                    <div class="icon"></div>
+                    <a href="">Forex4you</a>
+                </div>
+                <div class="icon-link">
+                    <div class="icon"></div>
+                    <a href="">TeleTrade</a>
+                </div>
+                <a href="" class="link">Все новые брокеры <span class="icon"></span></a>
+            </div>
+        </div>
+        <div class="col-item">
+            <header>Ближайшие события</header>
+            <div class="item-list">
+                <div class="item with-side">
+                    <div class="side clear">
+                        <div class="date">12</div>
+                        <div class="date-details">дек<span class="day-of-week">пн</span></div>
+                    </div>
+                    <a href="">Броварские депутаты отдали участнику списка Forbes 96 гектаров</a>
+                </div>
+                <div class="item with-side">
+                    <div class="side clear">
+                        <div class="date">04</div>
+                        <div class="date-details">дек<span class="day-of-week">пт</span></div>
+                    </div>
+                    <a href="">Около 5000 человек продолжают митинг на Майдане</a>
+                </div>
+                <div class="item with-side">
+                    <div class="side clear">
+                        <div class="date">01</div>
+                        <div class="date-details">дек<span class="day-of-week">ср</span></div>
+                    </div>
+                    <a href="">В НАБУ считают, что политическая ситуация не влияет на работу банков</a>
+                </div>
+                <div class="item with-side">
+                    <div class="side clear">
+                        <div class="date">29</div>
+                        <div class="date-details">ноя<span class="day-of-week">чт</span></div>
+                    </div>
+                    <a href="">Арбузов уверяет, что Украина нацелена на евроинтеграцию</a>
+                </div>
+                <div class="item with-side">
+                    <div class="side clear">
+                        <div class="date">27</div>
+                        <div class="date-details">ноя<span class="day-of-week">вс</span></div>
+                    </div>
+                    <a href="">Раде предлагают устранить противоречия в Налоговом кодексе</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 
 <footer class="main">
-    <div class="content">
-
+    <div class="content clear">
+        <div class="footer-item w200">
+            <div class="login-box">
+                <a href=""><span class="icon"></span>Войти</a>
+                <a href="">Регистрация</a>
+            </div>
+            <div class="copyrights">
+                <img src="/library/img/fintrends-logo.png" alt="logo">
+                <p>Copyright 2010-2013. <a href="">Fintrends</a></p>
+                <p>Все права защищены</p>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h3>Разделы</h3>
+            <div class="footer-item-content">
+                <ul>
+                    <li><a href="">Тренды</a></li>
+                    <li><a href="">События</a></li>
+                    <li><a href="">Брокеры</a></li>
+                    <li><a href="">Пользователи</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h3>Посты</h3>
+            <div class="footer-item-content">
+                <ul>
+                    <li><a href="">Лучшие</a></li>
+                    <li><a href="">Тематические</a></li>
+                    <li><a href="">Брокерские</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h3>Инфо</h3>
+            <div class="footer-item-content">
+                <ul>
+                    <li><a href="">О сайте</a></li>
+                    <li><a href="">Правила</a></li>
+                    <li><a href="">Помощь</a></li>
+                    <li><a href="">Соглашение</a></li>
+                    <li><a href="">Статистика</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h3>Услуги</h3>
+            <div class="footer-item-content">
+                <ul>
+                    <li><a href="">Реклама</a></li>
+                    <li><a href="">Корпоративные тарифы</a></li>
+                    <li><a href="">События</a></li>
+                    <li><a href="">Спецпроекты</a></li>
+                    <li><a href="">Средства в управление</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-item w260">
+            <div class="support">
+                <header>Служба поддержки</header>
+                <ul class="social-links clear">
+                    <li><a href="">f</a></li>
+                    <li><a href="">f</a></li>
+                    <li><a href="">f</a></li>
+                    <li><a href="">f</a></li>
+                    <li><a href="">f</a></li>
+                </ul>
+            </div>
+            <div class="copyrights text-right">
+                <img src="/library/img/sponge-logo.png" alt="logo">
+                <p>Сайт разработан и инвестирован</p>
+                <a href="">sponge.com.ua</a>
+            </div>
+        </div>
     </div>
 </footer>
 <script src="/dist/js/jquery-3.1.1.min.js"></script>

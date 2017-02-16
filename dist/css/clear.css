@@ -16,7 +16,7 @@ nav,
 object, ol, output, 
 pre, progress, 
 q, 
-s, samp, section, small, span, source, strike, strong, sub, sup, 
+s, samp, section, small, span, source, strike, strong, sub,
 table, tbody, tfoot, thead, th, tr, td, video, tt, 
 u, 
 var{    background:transparent;     border:0 none;     font-size:100%;     margin:0; padding:0; border:0; outline:0;     vertical-align:top}
@@ -45,8 +45,6 @@ h4{font-size:14px; font-weight:bold}
 h5{font-size:12px; font-weight:bold}
 h6{font-size:11px; font-weight:bold}
 
-A:visited{ text-decoration:none; }
-A:link{ text-decoration:none; }
 A:hover{ text-decoration:underline; }
 A.active:visited{ text-decoration:underline; }
 A.active:link{ text-decoration:underline; }
@@ -55,6 +53,12 @@ A.active:hover{ text-decoration:none; }
 /*ul li{margin:0 0 0 25px}*/
 ul li {list-style-type: none}
 
+input, textarea, button {
+    outline: 0;
+}
+button {
+    border: none;
+}
 .submit{  position:absolute;   color:#FFF;   border:0;   padding:0;   margin:0;   background:#FFF;   left:-8000px;   top:-8000px}
 
 div.clearfix{content:".";     display:block;     height:0;     clear:both;     visibility:hidden}
