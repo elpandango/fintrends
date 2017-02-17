@@ -80,7 +80,7 @@ div.clearfix{content:".";display:block;height:0;clear:both;visibility:hidden}
     text-align: center;
     color: #FFF;
     font-size: 1.3em;
-    line-height: 35px;
+    line-height: 33px;
     border: 1px solid transparent;
     border-radius: 5px;
     display: inline-block;
@@ -107,6 +107,7 @@ div.clearfix{content:".";display:block;height:0;clear:both;visibility:hidden}
 .link {
     color: #6195B5;
     font-size: 13px;
+    line-height: 22px;
     text-decoration: underline;
     position: relative;
 }
@@ -259,7 +260,8 @@ header.main .user-group-item:last-child {
 header.main .user-group-item a {
     color: #FFF;
     font-size: 1.2em;
-    line-height: 26px;
+    line-height: 22px;
+    box-sizing: border-box;
     border: 1px solid transparent;
     border-radius: 5px;
     display: inline-block;
@@ -407,20 +409,25 @@ header.main.active #burger .line:after {
     transform: rotate(-45deg);
 }
 .menu .content {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    /*padding-top: 30px;*/
+    /*padding-bottom: 20px;*/
 }
 .menu .nav-item {
     display: block;
-    font-family: 'RobotoMedium';
-    font-size: 2.2em;
-    color: #6195B6;
-    text-transform: uppercase;
     float: left;
     margin-right: 35px;
+    padding: 20px 0;
 }
-.menu .nav-item.active,
-.menu .nav-item.active:hover {
+.menu .nav-item a {
+    font-family: 'RobotoMedium';
+    font-size: 2.2em;
+    line-height: 30px;
+    color: #6195B6;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.menu .nav-item.active a,
+.menu .nav-item.active a:hover {
     color: #333333;
     text-decoration: none;
 }
@@ -432,6 +439,7 @@ header.main.active #burger .line:after {
 
 .tabs {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: 10px;
 }
 .tabs .content {
     padding-left: 0;
@@ -473,38 +481,39 @@ header.main.active #burger .line:after {
 
 /*Filters*/
 
-.filters {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
 .filters .filters-item {
     display: inline-block;
+    line-height: 30px;
+    margin-right: 20px;
+}
+.filters .filters-item a {
     color: #6195B6;
     font-size: 1.2em;
     border-bottom: 1px dashed #6195B6;
     text-decoration: none;
-    margin-right: 20px;
 }
-.filters .filters-item.active {
+.filters .filters-item.active a {
     color: #333333;
     text-decoration: none;
     border-bottom: transparent;
 }
-.filters .filters-item:hover {
+
+.filters .filters-item a:hover {
     color: #333333;
+    border-bottom: 1px dashed #333333;
 }
 
 /*Tags*/
 
-.tags {
-    margin-bottom: 5px;
-}
 .tag-item {
+    line-height: 18px;
+    position: relative;
+    display: inline-block;
+}
+.tag-item a {
     color: #6195B6;
     font-size: 1.1em;
     text-decoration: underline;
-    position: relative;
-    display: inline-block;
 }
 .col-left {
     float: left;
@@ -523,7 +532,7 @@ header.main.active #burger .line:after {
 
 .col-content {
     box-sizing: border-box;
-    padding: 0 20px 20px;
+    padding: 10px 20px 20px;
     width: 100%;
 }
 .col-content select {
@@ -539,6 +548,7 @@ header.main.active #burger .line:after {
     cursor: pointer;
 
     background: url(../../library/img/icons/select-arrow.png) no-repeat 97% center;
+    background-color: #FFF;
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -550,8 +560,8 @@ select::-ms-expand {
 .col-content p {
     font-size: 1.3em;
     color: #333333;
-    margin-bottom: 30px;
-    line-height: 20px;
+    margin-bottom: 20px;
+    line-height: 22px;
 }
 .checkboxes label {
     display: block;
@@ -559,6 +569,7 @@ select::-ms-expand {
     min-height: 22px;
     font-family: Verdana;
     font-size: 1.1em;
+    line-height: 18px;
     color: #333333;
     margin-bottom: 15px;
     padding-left: 32px;
@@ -606,20 +617,22 @@ select::-ms-expand {
 }
 .news .title {
     font-size: 2.2em;
+    line-height: 30px;
     text-decoration: underline;
     color: #333333;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     display: inline-block;
 }
 .news .date {
     font-size: 1.1em;
+    line-height: 30px;
     color: #999999;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 .news p {
     font-size: 1.3em;
     margin-bottom: 25px;
-    line-height: 20px;
+    line-height: 22px;
 }
 .news p:last-of-type {
     margin-bottom: 20px;
@@ -674,16 +687,15 @@ select::-ms-expand {
     margin-bottom: 30px;
 }
 .col-right .col-item header {
-    padding: 15px 20px;
+    padding: 10px 20px 0;
     box-sizing: border-box;
     font-family: 'RobotoMedium';
     font-size: 1.8em;
     color: #333333;
     text-transform: uppercase;
+    line-height: 30px;
 }
-.col-right .col-item header.short {
-    padding-bottom: 0;
-}
+
 .col-right .col-item .item-list .item {
     display: block;
     box-sizing: border-box;
@@ -708,11 +720,14 @@ select::-ms-expand {
 .col-right .col-item .followers {
     text-align: left;
     font-size: 1.3em;
+    line-height: 22px;
     color: #999999;
 }
 .col-content .icon-link {
-    margin-bottom: 20px;
-    line-height: 22px;
+    line-height: 40px;
+}
+.col-content .icon-link:last-of-type {
+    margin-bottom: 10px;
 }
 .col-content .icon-link a {
     color: #6195B5;
@@ -725,8 +740,8 @@ select::-ms-expand {
 .pagination-item:hover,
 header.main .dropdown ul li a:hover,
 .tabs .tab-item:hover,
-.menu .nav-item:hover,
-.tag-item:hover,
+.menu .nav-item a:hover,
+.tag-item a:hover,
 .link:hover,
 .article-info-list .info-item a:hover {
     color: #FA3D3D;
@@ -814,13 +829,13 @@ footer.main .footer-item.w260 {
 .footer-item h3 {
     font-family: "Roboto Medium";
     font-size: 1.6em;
+    line-height: 34px;
     color: #95A5B1;
     text-transform: uppercase;
     font-weight: normal;
-    margin-bottom: 20px;
 }
 .footer-item-content li {
-    margin-bottom: 20px;
+    line-height: 34px;
 }
 .footer-item-content a {
     font-family: Verdana;
@@ -833,13 +848,13 @@ footer.main .footer-item.w260 {
     border-radius: 5px;
     box-sizing: border-box;
     width: 105px;
-    padding: 10px;
+    padding: 0 10px;
 }
 .footer-item .login-box a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
-    margin-bottom: 5px;
+    line-height: 26px;
     display: block;
 }
 
@@ -860,6 +875,7 @@ footer.main .footer-item.w260 {
 .copyrights p {
     color: #95A5B1;
     font-size: 1.1em;
+    line-height: 18px;
 }
 .copyrights a {
     color: #FFF;
@@ -872,6 +888,7 @@ footer.main .footer-item.w260 {
 .support header {
     font-family: Verdana;
     font-size: 1.1em;
+    line-height: 18px;
     color: #FFF;
     text-decoration: underline;
     margin-bottom: 20px;
@@ -957,7 +974,7 @@ footer.main .footer-item.w260 {
         width: 120px;
         font-size: 1.3em;
     }
-    .menu .nav-item {
+    .menu .nav-item a {
         font-size: 1.4em;
     }
     .footer-middle {
@@ -973,12 +990,20 @@ footer.main .footer-item.w260 {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .filters .filters-item {
+        margin-right: 10px;
+    }
+    header.main #burger {
+        right: 10px;
+    }
     footer.main .footer-item.w200,
     footer.main .footer-item.w260 {
         width: 50%;
     }
     .menu .nav-item {
         margin-right: 15px;
+    }
+    .menu .nav-item a {
         font-size: 1.2em;
     }
     .tabs .tab-item {
